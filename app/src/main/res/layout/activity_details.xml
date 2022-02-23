@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.DetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/movieBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieRevenue"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/movieImageID_details"
+                android:padding="5dp"
+                android:text="Budget:" />
+
+            <TextView
+                android:id="@+id/movieRatingID_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieReleaseID_details"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/movieImageID_details"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:text="Rating:" />
+
+            <TextView
+                android:id="@+id/movieRuntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieRatingID_details"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/movieImageID_details"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:text="Runtime:" />
+
+            <TextView
+                android:id="@+id/movieRevenue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieRuntime"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/movieImageID_details"
+                android:padding="5dp"
+                android:text="Revenue:" />
+
+            <TextView
+                android:id="@+id/movieOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieBudget"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:paddingTop="5dp"
+                android:text="Overview:" />
+
+            <TextView
+                android:id="@+id/movieReleaseID_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieTitleID_details"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/movieImageID_details"
+                android:padding="5dp"
+                android:paddingLeft="10dp"
+                android:text="Release date:" />
+
+            <TextView
+                android:id="@+id/movieTitleID_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/movieImageID_details"
+                android:paddingLeft="5dp"
+                android:text="Movie title"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/movieImageID_details"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@android:color/background_dark" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
